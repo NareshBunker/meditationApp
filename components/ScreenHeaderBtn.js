@@ -5,7 +5,7 @@ import icons from "../constants/icons";
 import { useRouter } from "expo-router";
 
 const ScreenHeaderBtn = ({ detailPage, handleShare }) => {
-  console.log(detailPage);
+  console.log('detailPage==========',detailPage);
 
   const router = useRouter();
 
@@ -24,7 +24,7 @@ const ScreenHeaderBtn = ({ detailPage, handleShare }) => {
           </>
         ) : (
           <>
-            <TouchableOpacity style={styles.btnContainer} onPress={() => router.push("/settings")}>
+            <TouchableOpacity style={styles.btnContainer} onPress={() => router.push("/SettingsScreen")}>
               <Image source={icons.settings} style={styles.image} />
             </TouchableOpacity>
           </>
